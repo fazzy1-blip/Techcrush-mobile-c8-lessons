@@ -10,7 +10,7 @@ type SpecialInputProps = {
 
 export const SpecialInput = ({
      placeholder = "type here", 
-     placeholderTextColor = "yellow",
+     placeholderTextColor = "#cbd1d1",
      label}:
      SpecialInputProps) => {
     return (

@@ -6,32 +6,24 @@ import { useRouter } from "expo-router";
 import React, { useEffect } from "react";
 
 export default function HomeScreen() {
-  const navigator = useRouter();
+  const router = useRouter();
 
   useEffect (() => {
     const timer = setTimeout (() => {
-      navigator.replace ("/login");
+      router.replace ("/login");
     }, 3000);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [router]);
+
+
+
+
 
   return (
     <View style = { myStyles.splash}>
       <Text style = { myStyles.splashText}> Techcrush Mobile </Text>
       </View>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
